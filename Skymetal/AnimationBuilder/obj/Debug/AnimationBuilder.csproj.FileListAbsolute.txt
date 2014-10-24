@@ -1,0 +1,10 @@
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\bin\Debug\AnimationBuilder.exe.config
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\bin\Debug\AnimationBuilder.exe
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\bin\Debug\AnimationBuilder.pdb
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.Form1.resources
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.Properties.Resources.resources
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.csproj.GenerateResource.Cache
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.exe
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.pdb
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.TextDialog.resources
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\AnimationBuilder\obj\Debug\AnimationBuilder.csprojResolveAssemblyReference.cache

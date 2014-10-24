@@ -1,0 +1,10 @@
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\SDL.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Skymetal.exe
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Skymetal.pdb
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Lidgren.Network.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\MonoGame.Framework.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\OpenTK.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Tao.Sdl.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.exe
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.pdb
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.csprojResolveAssemblyReference.cache

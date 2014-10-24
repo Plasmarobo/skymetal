@@ -1,0 +1,5 @@
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\SkymetalTests.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\SkymetalTests.pdb
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.csprojResolveAssemblyReference.cache
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.dll
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.pdb
