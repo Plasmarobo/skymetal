@@ -12,9 +12,9 @@ namespace AnimationBuilder
     {
         public Rectangle mSource;
         public Int32 mDuration;
-        public String ToString()
+        public string Description
         {
-            return mSource.X.ToString() + "," + mSource.Y.ToString() + " " + mSource.Width.ToString() + "x" + mSource.Height.ToString() + " " + mDuration.ToString() + "ms";
+            get { return mSource.X.ToString() + "," + mSource.Y.ToString() + " " + mSource.Width.ToString() + "x" + mSource.Height.ToString() + " " + mDuration.ToString() + "ms"; } 
         }
 
         public void Read(FileStream file)

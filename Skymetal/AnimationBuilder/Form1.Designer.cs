@@ -45,6 +45,7 @@
             this.LoadAnims = new System.Windows.Forms.Button();
             this.ImagePanel = new System.Windows.Forms.Panel();
             this.ImageBox = new System.Windows.Forms.PictureBox();
+            this.NewAnims = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.ImagePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox)).BeginInit();
@@ -197,7 +198,7 @@
             // 
             // LoadAnims
             // 
-            this.LoadAnims.Location = new System.Drawing.Point(667, 416);
+            this.LoadAnims.Location = new System.Drawing.Point(711, 416);
             this.LoadAnims.Name = "LoadAnims";
             this.LoadAnims.Size = new System.Drawing.Size(75, 23);
             this.LoadAnims.TabIndex = 4;
@@ -225,11 +226,22 @@
             this.ImageBox.Paint += new System.Windows.Forms.PaintEventHandler(this.ImageBox_Paint);
             this.ImageBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ImageBox_MouseDown);
             // 
+            // NewAnims
+            // 
+            this.NewAnims.Location = new System.Drawing.Point(630, 416);
+            this.NewAnims.Name = "NewAnims";
+            this.NewAnims.Size = new System.Drawing.Size(75, 23);
+            this.NewAnims.TabIndex = 6;
+            this.NewAnims.Text = "New";
+            this.NewAnims.UseVisualStyleBackColor = true;
+            this.NewAnims.Click += new System.EventHandler(this.NewAnims_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 448);
+            this.Controls.Add(this.NewAnims);
             this.Controls.Add(this.ImagePanel);
             this.Controls.Add(this.LoadAnims);
             this.Controls.Add(this.SaveAnims);
@@ -265,6 +277,7 @@
         private System.Windows.Forms.Button LoadAnims;
         private System.Windows.Forms.Panel ImagePanel;
         private System.Windows.Forms.PictureBox ImageBox;
+        private System.Windows.Forms.Button NewAnims;
 
     }
 }

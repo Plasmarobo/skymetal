@@ -32,8 +32,10 @@ namespace AnimationBuilder
         {
             currentAnimation = new Animation();
             Animations = new Dictionary<string, Animation>();
-            NameList.DataSource = new BindingSource(Animations, null);
-            NameList.DisplayMember = "Key";
+            NameList.DataSource = new BindingSource(Animations.Keys, null);
+            FramesBox.DataSource = new BindingSource(currentAnimation.mFrames, null);
+            //NameList.DisplayMember = "Key";
+            //NameList.ValueMember = "Key";
             //NameList.ValueMember = "Value";
         }
         private Boolean WriteAnimationsToFile(String filename)
@@ -138,6 +140,7 @@ namespace AnimationBuilder
                 f.mSource = selected;
                 currentAnimation.AddFrame(f);
                 FramesBox.DataSource = new BindingSource(currentAnimation.mAnimation, null);
+                FramesBox.DisplayMember = "Description";
             }
         }
 
@@ -197,10 +200,11 @@ namespace AnimationBuilder
             }
             NameBox.Text = name;
             Animations.Add(name, currentAnimation);
-            NameList.DataSource = new BindingSource(Animations, null);
-            NameList.DisplayMember = "Key";
-            NameList.ValueMember = "Key";
+            NameList.DataSource = new BindingSource(Animations.Keys, null);
+            //NameList.DisplayMember = "Key";
+            //NameList.ValueMember = "Key";
             FramesBox.DataSource = new BindingSource(currentAnimation.mAnimation, null);
+            FramesBox.DisplayMember = "Description";
             //FramesBox.Items.Add()
             //FramesBox.DataSource = new BindingSource(currentAnimation.mAnimation, null);
             
@@ -215,14 +219,22 @@ namespace AnimationBuilder
                 if (NameList.SelectedValue != null)
                 {
                     
-                        NameBox.Text = ((KeyValuePair<String, Animation>)NameList.SelectedValue).Key;
-                        currentAnimation = ((KeyValuePair<String, Animation>)NameList.SelectedValue).Value;
-                        FramesBox.DataSource = new BindingSource(currentAnimation.mAnimation, null);
+                        NameBox.Text = ((String)NameList.SelectedValue);
+                        if (Animations.TryGetValue((String) NameList.SelectedValue, out currentAnimation))
+                        {
+                            FramesBox.DataSource = new BindingSource(currentAnimation.mAnimation, null);
+                            FramesBox.DisplayMember = "Description";
+                        }
+                        else
+                        {
+
+                        }
                     }
                     else
                     {
-                        NameList.DataSource = new BindingSource(Animations, null);
-                        NameList.DisplayMember = "Key";
+                        NameList.DataSource = new BindingSource(Animations.Keys, null);
+                        //NameList.DisplayMember = "Key";
+                        //NameList.ValueMember = "Key";
                     }
                 
             }
@@ -231,7 +243,10 @@ namespace AnimationBuilder
         private void FramesBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (FramesBox.SelectedIndex > 0 && FramesBox.SelectedIndex < currentAnimation.mAnimation.Count)
+            {
                 selected = currentAnimation.mAnimation[FramesBox.SelectedIndex].mSource;
+                ImageBox.Refresh();
+            }
             else
                 selected = new Rectangle(0, 0, 0, 0);
         }
@@ -260,14 +275,45 @@ namespace AnimationBuilder
             {
                 if(!ReadAnimationsFromFile(open.FileName))
                 {
-                    MessageBox.Show("Could now load animation!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Could not load animation!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     hasSaved = true;
                 }
                 else
                 {
                     hasSaved = false;
+                    NameList.DataSource = new BindingSource(Animations.Keys, null);
+                    //NameList.DisplayMember = "Keys";
+                    //NameList.ValueMember = "Key";
                 }
             }
+        }
+
+        private void NewAnims_Click(object sender, EventArgs e)
+        {
+            if (!hasSaved)
+            {
+                DialogResult res = MessageBox.Show("The current animation has not been saved, opening a new animation will discard work since last save. Save file?", "Save Animation?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        SaveFileDialog save = new SaveFileDialog();
+                        if (save.ShowDialog() == DialogResult.OK)
+                        {
+                            if (!WriteAnimationsToFile(save.FileName))
+                            {
+                                MessageBox.Show("Could not save animation!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        break;
+                    case DialogResult.No:
+                        ClearAnims();
+                        break;
+                    case DialogResult.Cancel:
+                    default:
+                        return;
+                }
+            }
+            ClearAnims();
         }
 
 
