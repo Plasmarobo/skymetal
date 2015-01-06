@@ -8,3 +8,4 @@ C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.exe
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.pdb
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.csprojResolveAssemblyReference.cache
+C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Skymetal.exe.config

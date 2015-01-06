@@ -29,6 +29,18 @@ namespace Skymetal
         {
             return mTimeStamp;
         }
+
+        public virtual String ToLuaTable()
+        {
+            String table = "event={";
+            foreach (KeyValuePair<String, String> kvp in Properties)
+            {
+                table += kvp.Key + '=' + kvp.Value + ",";
+            }
+            table += "}";
+            return table;
+
+        }
     }
 
     class EventListener
@@ -36,7 +48,7 @@ namespace Skymetal
         protected Lua mLua;
         protected Dictionary<String, String> mProperties;
         protected Dictionary<String, String> mBehaviors;
-        protected virtual String ToLuaTable()
+        public virtual String ToLuaTable()
         {
             String table = "self={";
             foreach(KeyValuePair<String, String> kvp in mProperties)
@@ -57,6 +69,7 @@ namespace Skymetal
         public void ProcessEvent(Event e)
         {
             String behavior = mBehaviors[e.GetName()];
+            mLua.DoString(e.ToLuaTable());
             mLua.DoFile(behavior);
             
         }
@@ -66,6 +79,8 @@ namespace Skymetal
             LuaTable self = (LuaTable)mLua.DoString("return self")[0];
             foreach (var value in self)
             {
+                //Get table members
+                Console.WriteLine(value);
             }
         }
     }

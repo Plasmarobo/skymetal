@@ -121,7 +121,7 @@ namespace Skymetal
     }
 
 
-    class Drawable
+    class Drawable : EventListener
     {
         protected Texture2D mImage;
         protected Vector3 mPosition;
@@ -143,6 +143,22 @@ namespace Skymetal
             {
                 anim.Draw(gameTime, batch, mImage, mPosition, mRotation, mOrigin, mEffects);
             }
+        }
+
+        public virtual String ToLuaTable()
+        {
+            String table = "self={";
+            table += ("mPosition={x=" + mPosition.X.ToString() + ",y=" + mPosition.Y.ToString() + ",z=" + mPosition.Z.ToString() + "},");
+            //table += "mAnimations={";
+            //foreach(KeyValuePair<String, Animation> anim in mAnimations)
+            //{
+            //    table += anim.Key + "=" + anim.Value.ToString()
+            //}
+            table += "mAnimationState=" + mAnimationState;
+            table += "mRotation=" + mRotation.ToString();
+            table += ("mOrigin={x=" + mOrigin.X.ToString() + ",y=" + mOrigin.Y.ToString() + "},");
+            //SpriteEffects mEffects;
+            return table;
         }
     }
 }
