@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="Drawable.cs" />
     <Compile Include="Events.cs" />
+    <Compile Include="ResourceManager.cs" />
     <Compile Include="Skymetal_Game.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
