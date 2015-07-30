@@ -3,3 +3,10 @@ C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\Skyme
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.csprojResolveAssemblyReference.cache
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.dll
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.pdb
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\SkymetalTests.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\SkymetalTests.pdb
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\KeraLua.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\bin\Debug\NLua.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.csprojResolveAssemblyReference.cache
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\SkymetalTests\obj\Debug\SkymetalTests.pdb

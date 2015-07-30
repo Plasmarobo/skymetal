@@ -9,3 +9,11 @@ C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymet
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.pdb
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.csprojResolveAssemblyReference.cache
 C:\Users\Austen\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Skymetal.exe.config
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\Skymetal.exe.config
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.exe
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.pdb
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\SDL.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\DynamicLua.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\KeraLua.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\bin\WindowsGL\Debug\NLua.dll
+C:\Users\plasm\OneDrive\Documents\GitHub\skymetal\Skymetal\Skymetal\obj\x86\Debug\Skymetal.csprojResolveAssemblyReference.cache
