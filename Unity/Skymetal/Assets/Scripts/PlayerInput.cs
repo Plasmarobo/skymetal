@@ -13,6 +13,8 @@ public class PlayerInput : MonoBehaviour {
 			gameObject.SendMessage ("North");
 		} else if (Input.GetKey ("down")) {
 			gameObject.SendMessage ("South");
+		} else if (Input.GetKeyDown ("space")){
+			gameObject.SendMessage("Use");
 		} else {
 			gameObject.SendMessage ("Idle");
 		}

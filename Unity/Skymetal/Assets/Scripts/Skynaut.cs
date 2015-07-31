@@ -64,6 +64,36 @@ public class Skynaut : MonoBehaviour {
 		}
 		m_facing = Definitions.South;
 	}
+	void Use()
+	{
+		m_animator.SetTrigger ("use");
+		Vector3 pos = new Vector3 (0, 0, 0);
+		switch (m_facing) {
+		case Definitions.North:
+			pos.x = gameObject.transform.position.x;
+			pos.y = gameObject.transform.position.y + 1;
+			break;
+		case Definitions.East:
+			pos.x = gameObject.transform.position.x + 1;
+			pos.y = gameObject.transform.position.y;
+			break;
+		case Definitions.South:
+			pos.x = gameObject.transform.position.x;
+			pos.y = gameObject.transform.position.y - 1;
+			break;
+		case Definitions.West:
+			pos.x = gameObject.transform.position.x - 1;
+			pos.y = gameObject.transform.position.y;
+			break;
+		default:
+			break;
+		}
+		var prefab = Resources.Load<GameObject> ("Hitbox");
+		GameObject hitbox = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
+		hitbox.GetComponent<OnHit> ().message = "Use";
+		hitbox.GetComponent<OnHit> ().life = 0;
+
+	}
 	void Idle()
 	{
 		m_moving = false;
