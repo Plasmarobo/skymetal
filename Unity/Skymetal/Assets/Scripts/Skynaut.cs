@@ -71,6 +71,9 @@ public class Skynaut : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		m_animator.SetInteger ("direction", m_facing);
+		if (System.Math.Abs (m_body.velocity.x) + System.Math.Abs (m_body.velocity.y) > 0.5) {
+			m_moving = true;
+		}
 		m_animator.SetBool("moving", m_moving);
 	}
 }
